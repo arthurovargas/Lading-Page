@@ -71,19 +71,30 @@ h6 {
 :root {
   --color-primary: #217bf4;
   --color-secondary: #ffaf2e;
-  --color-text: #0A093D;
+  --color-text: #0a093d;
   --full-width: 1170px;
+
+  --space-1: 1rem;
+  --space-1-5: 1.5rem;
 }
 
-html{
+html {
   color: var(--color-text);
 }
 
 body {
   color: var(--color-text);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   width: var(--full-width);
+  margin: 0 auto;
+}
+
+.header__nav {
+  display: flex;
+  gap: 4.5rem;
 }
