@@ -15,25 +15,35 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__nav">
-        <img
-          src="./images/logo.svg"
-          alt="Logo for Netbook company. Contains a circle and a text. The text is the company name and the circle at left of the name is divide in two color orange and red."
-        />
-        <div>
-          <nav>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Community</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Events</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div>
-        <input type="search" />
-        <a href="./Login">Log in</a>
+      <img
+        src="./images/logo.svg"
+        alt="Logo for Netbook company. Contains a circle and a text. The text is the company name and the circle at left of the name is divide in two color orange and red."
+        width="145"
+        height="35"
+      />
+      <nav class="header__nav">
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">Community</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Events</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <form action="" class="header__search">
+          <img
+            src="./images/icon-search.svg"
+            alt="Magnify glass icon for search"
+            width="16"
+            height="16"
+          />
+          <input
+            type="search"
+            aria-label="search"
+            placeholder="Search here ..."
+          />
+        </form>
+        <a href="./Login" class="btn">Log in</a>
       </div>
     </header>
     <main>
