@@ -336,3 +336,11 @@ Minuto 40 de la clase 3
   gap: 0.5rem;
   align-items: baseline;
 }
+
+.achievement .card a:hover {
+  color: var(--color-primary);
+}
+
+.achievement .card a:hover svg path{
+  stroke: var(--color-primary);
+}
