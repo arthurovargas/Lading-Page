@@ -344,3 +344,33 @@ Minuto 40 de la clase 3
 .achievement .card a:hover svg path{
   stroke: var(--color-primary);
 }
+
+.card__avatars {
+  display: inline-flex;
+  margin: 1rem;
+}
+
+.card__avatars img {
+  width: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+  aspect-ratio: 1/1;
+  box-shadow: -5px 4px 14px rgba(151, 151, 151, 0.28);
+}
+
+.card__avatars img:not(:first-child) {
+  margin-left: -6px;
+}
+
+.card.rating .card__subtittle {
+  display: inline-flex;
+  align-items: center;
+}
+
+.card.award .card__subtittle{
+  display: inline-flex;
+}
+
+.card.award .card__subtittle img {
+  margin-right: 1rem;
+}
