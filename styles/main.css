@@ -111,6 +111,10 @@ a {
   line-height: 1rem;
 }
 
+.btn svg {
+  margin-left: 1rem;
+}
+
 .btn--large {
   height: 64px;
   padding: 0 48px;
@@ -125,6 +129,19 @@ a {
 .container {
   width: var(--full-width);
   margin: 0 auto;
+}
+
+h2.section__tittle {
+  font-size: 1.125rem;
+  color: var(--color-primary);
+}
+
+p.section__subtittle{
+  color: var(--color-heading);
+  font-weight: bold;
+  font-size: 2.25rem;
+  padding: 1rem 0;
+  line-height: 1.33;
 }
 
 .header {
@@ -223,17 +240,7 @@ a {
   margin: 6rem auto;
 }
 
-.whats-netbooks__content h2 {
-  font-size: 1.125rem;
-  color: var(--color-primary);
-}
-
-.whats-netbooks__content h3 {
-  font-size: 2.25rem;
-  padding: 1rem 0;
-}
-
-.whats-netbooks__content p {
+.whats-netbooks__content p:not(.section__subtittle) {
   font-size: 1rem;
   margin-bottom: 2rem;
 }
@@ -320,7 +327,7 @@ Minuto 40 de la clase 3
 }
 
 .card__subtittle {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .card__subtittle b {
@@ -335,6 +342,8 @@ Minuto 40 de la clase 3
   display: inline-flex;
   gap: 0.5rem;
   align-items: baseline;
+  color: rgba(74, 74, 86, 1);
+  font-weight: bold;
 }
 
 .achievement .card a:hover {
@@ -368,9 +377,21 @@ Minuto 40 de la clase 3
 }
 
 .card.award .card__subtittle{
+  margin-top: 1rem;
   display: inline-flex;
+  margin-bottom: 3rem;
 }
 
 .card.award .card__subtittle img {
   margin-right: 1rem;
+}
+
+.achievement__content p:not(.section__subtittle) {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.achievement__content {
+  margin-inline-start: auto;
+  width: 380px;
 }
