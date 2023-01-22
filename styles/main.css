@@ -136,7 +136,7 @@ h2.section__tittle {
   color: var(--color-primary);
 }
 
-p.section__subtittle{
+p.section__subtittle {
   color: var(--color-heading);
   font-weight: bold;
   font-size: 2.25rem;
@@ -301,7 +301,7 @@ Minuto 40 de la clase 3
 .achievement .card {
   height: 340px;
   width: 336px;
-  padding: 3rem 1.125rem 2.5rem 2.5rem;
+  padding: 3rem 1.125rem 20rem 2.5rem;
   background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(
         to bottom,
@@ -334,6 +334,9 @@ Minuto 40 de la clase 3
   color: var(--color-primary);
 }
 
+.achievement {
+  margin-bottom: 7.9375rem;
+}
 .achievement .card__content {
   margin-bottom: 2rem;
 }
@@ -350,7 +353,7 @@ Minuto 40 de la clase 3
   color: var(--color-primary);
 }
 
-.achievement .card a:hover svg path{
+.achievement .card a:hover svg path {
   stroke: var(--color-primary);
 }
 
@@ -376,7 +379,7 @@ Minuto 40 de la clase 3
   align-items: center;
 }
 
-.card.award .card__subtittle{
+.card.award .card__subtittle {
   margin-top: 1rem;
   display: inline-flex;
   margin-bottom: 3rem;
@@ -394,4 +397,58 @@ Minuto 40 de la clase 3
 .achievement__content {
   margin-inline-start: auto;
   width: 380px;
+}
+
+.community {
+  display: grid;
+  gap: 4rem;
+  background: linear-gradient(
+    0deg,
+    rgba(241, 246, 253, 0) 1.63%,
+    #f1f6fd 20.5%,
+    #f1f6fd 58.57%,
+    #ffffff 100%
+  );
+}
+
+.community__content {
+  margin-top: 60px;
+}
+
+.community__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+
+.community__card {
+  display: flex;
+  background: var(--color-white);
+  padding: 2.5rem;
+  border-radius: 14px;
+  gap: 2.5rem;
+  box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+}
+
+.community__card h3 {
+  color: var(--color-heading);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.community__card p {
+  font-size: 1rem;
+}
+
+.community__card-icon {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 66px;
+  aspect-ratio: 1/1;
+  background: linear-gradient(154.49deg, #5ca1fe 6.61%, #217bf4 89.72%);
+  box-shadow: 0px 10px 22px -2px rgba(109, 171, 255, 0.36);
+  border-radius: 1.5rem;
 }
