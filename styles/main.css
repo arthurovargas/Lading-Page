@@ -481,4 +481,17 @@ Minuto 40 de la clase 3
 
 .newst {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 98px;
+  font-weight: 600;
+  background: var(--color-primary-10);
+  border-radius: 0.875rem;
+}
+
+.newst p:hover {
+  background: var(--color-primary);
+  color: white;
+  padding: 20PX 50px;
+  border-radius: 6px;
 }
