@@ -557,3 +557,23 @@ Minuto 40 de la clase 3
   font-weight: bold;
   
 }
+
+.app {
+  background: var(--color-primary-10);
+}
+
+.app__content {
+  width: 351px;
+}
+
+.app__content p:not(.section__subtittle) {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.app__stores {
+  display: inline-flex;
+  gap: 1.25rem;
+  align-items: center;
+  
+}
