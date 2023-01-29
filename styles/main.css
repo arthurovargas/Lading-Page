@@ -310,9 +310,12 @@ Minuto 40 de la clase 3
   width: 336px;
   padding: 3rem 1.125rem 20rem 2.5rem;
   background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(to bottom,
-      rgba(185, 185, 185, 0.1188),
-      rgba(94, 94, 94, 0.1566)) border-box;
+    linear-gradient(
+        to bottom,
+        rgba(185, 185, 185, 0.1188),
+        rgba(94, 94, 94, 0.1566)
+      )
+      border-box;
   border: 1px solid transparent;
   border-radius: 1rem;
   transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
@@ -407,11 +410,13 @@ Minuto 40 de la clase 3
 .community {
   display: grid;
   gap: 4rem;
-  background: linear-gradient(0deg,
-      rgba(241, 246, 253, 0) 1.63%,
-      #f1f6fd 20.5%,
-      #f1f6fd 58.57%,
-      #ffffff 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(241, 246, 253, 0) 1.63%,
+    #f1f6fd 20.5%,
+    #f1f6fd 58.57%,
+    #ffffff 100%
+  );
   padding: 5rem 0;
   margin-bottom: 7.5rem;
 }
@@ -479,7 +484,7 @@ Minuto 40 de la clase 3
   box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
 }
 
-.team{
+.team {
   margin-bottom: 80px;
 }
 
@@ -501,7 +506,6 @@ Minuto 40 de la clase 3
 
 .team__tab {
   color: rgba(47, 44, 74, 1);
-  ;
   display: inline-flex;
   align-items: center;
   height: 3.5rem;
@@ -555,15 +559,18 @@ Minuto 40 de la clase 3
 .team__member--name {
   color: var(--color-heading);
   font-weight: bold;
-  
 }
 
 .app {
   background: var(--color-primary-10);
+  overflow: hidden;
 }
 
-.app__content {
-  width: 351px;
+.app .container {
+  display: grid;
+  grid-template-columns: 351px 1fr;
+  height: 560px;
+  align-items: center;
 }
 
 .app__content p:not(.section__subtittle) {
@@ -575,31 +582,47 @@ Minuto 40 de la clase 3
   display: inline-flex;
   gap: 1.25rem;
   align-items: center;
-  
 }
 
 .app__stores img {
   border-radius: 6px;
-  filter: drop-shadow(0px 0px 22px rgba(178, 188, 208, 0.21));
-  position: absolute;
-  top: 0;
-  left: 0;
+  box-shadow: 0px 0px 22px rgba(178, 188, 208, 0.21);
 }
 
-.app__screenshot{
+.app__screenshot {
   position: relative;
+  align-self: end;
+  width: 341px;
+  margin-inline-start: auto;
 }
 
-.app__screenshot-circle-1 {
-  width: 9.125rem;
-  height: 9.125rem;
-  border-radius: 50%;
-  background: #FC6A65;
+.app__screenshot .app__screenshot-picture {
+  filter: drop-shadow(0px 80px 250px rgba(0, 0, 0, 0.2));
+  position: relative;
+  z-index: 1;
 }
 
+.app__screenshot-shine {
+  position: absolute;
+  right: -56px;
+  top: -56px;
+}
+
+.app__screenshot-circle-1,
 .app__screenshot-circle-2 {
   width: 9.125rem;
   height: 9.125rem;
   border-radius: 50%;
-  background: #489D92;
+  position: absolute;
+  left: -42px;
+}
+
+.app__screenshot-circle-1 {
+  background: #fc6a65;
+  bottom: 72px;
+}
+
+.app__screenshot-circle-2 {
+  background: #489d92;
+  bottom: -72px;
 }
